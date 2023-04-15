@@ -1,0 +1,37 @@
+// String
+  let name: string = "youssef nassrallah";
+  // Number
+  let age: number | string = "23";
+  // Boolean
+  let isStudent: boolean = true;
+  // Array of Characters
+  let skills: string[] = ["c/c++", "html/css", "javaScript/typeScript", "React js", "python"];
+  // Array of Characters and numbers
+  let experience: [number, string] = [2023, "front end engineer at Amazon"];
+  // Object
+  type Person = {
+    name: string,
+    age?: number | string,
+    isStudent: boolean,
+    skills: string[],
+    experience: [number, string]
+  }
+
+  let person: Person = {
+    name: name,
+    age: age,
+    isStudent: isStudent,
+    skills: skills,
+    experience: experience
+  }
+
+  // TYPES
+  type G1 = { a: number, b: number };
+  type G2 = { c: number, d?: number };
+  type G3 = G1 & G2;
+  
+  let g1: G1 = { a: 1, b: 2 };
+  let g2: G2 = { c: 3, d: 4 };
+  let g3: G3 = { a: 1, b: 2, c: 3 };
+
+  console.log(g1, g2, g3);
